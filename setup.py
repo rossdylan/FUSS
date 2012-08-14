@@ -34,13 +34,13 @@ setup(name='FUSSy',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
-      test_suite='fedora_user_streams',
+      test_suite='fussy',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = fedora_user_streams:main
+      main = fussy:main
       [console_scripts]
-      initialize_fedora_user_streams_db = fedora_user_streams.scripts.initializedb:main
+      initialize_fussy_db = fussy.scripts.initializedb:main
       """,
       )
 
