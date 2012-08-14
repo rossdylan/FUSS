@@ -34,13 +34,13 @@ setup(name='FUSSy',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
-      test_suite='fussy',
+      test_suite='FUSSy',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = fussy:main
+      main = FUSSy:main
       [console_scripts]
-      initialize_fussy_db = fussy.scripts.initializedb:main
+      initialize_fussy_db = FUSSy.scripts.initializedb:main
       """,
       )
 
