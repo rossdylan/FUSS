@@ -1,9 +1,9 @@
-FUSSy - Fedora User Streams
+fuss - Fedora User Streams
 =========================
 
 The Idea
 ========
-FUSSy is webapp allowing for FAS users to customize a group of fedmsg topics to listen
+fuss is webapp allowing for FAS users to customize a group of fedmsg topics to listen
 to. Messages from the bus are filtered and rebroadcast with a new topic. this
 topic will be org.fedoraproject.userstreams.<fas_username>
 

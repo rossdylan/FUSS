@@ -17,7 +17,7 @@ requires = [
     'fedmsg',
     ]
 
-setup(name='FUSSy',
+setup(name='fuss',
       version='0.0',
       description='Fedora User Stream System',
       long_description=README + '\n\n' +  CHANGES,
@@ -29,18 +29,18 @@ setup(name='FUSSy',
         ],
       author='Ross Delinger',
       author_email='rossdylan@csh.rit.edu',
-      url='https://github.com/rossdylan/FUSSy',
+      url='https://github.com/rossdylan/fuss',
       keywords='web wsgi bfg pylons pyramid',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
-      test_suite='FUSSy',
+      test_suite='fuss',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = FUSSy:main
+      main = fuss:main
       [console_scripts]
-      initialize_fussy_db = FUSSy.scripts.initializedb:main
+      initialize_fuss_db = fuss.scripts.initializedb:main
       """,
       )
 
