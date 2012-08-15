@@ -8,4 +8,6 @@ from .models import (
     MyModel,
     )
 
-
+@view_config(route_name='index', renderer='index.mak')
+def index(request):
+    return {}
