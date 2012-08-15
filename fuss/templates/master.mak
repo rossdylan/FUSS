@@ -11,7 +11,7 @@
 		<div class="header">
 			<div><H1>Fedora User Streams</H1></div>
 		</div>
-	%{self.body()}
+	${self.body()}
 	</body>
 </html>
 
