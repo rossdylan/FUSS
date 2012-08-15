@@ -22,12 +22,12 @@ Base.query = DBSession.query_property()
 
 
 class FASUser(Base):
-    __table__ = 'users'
+    __tablename__ = 'users'
     id = Column(Integer, unique=True, primary_key=True)
     username = Column(Unicode(128), unique=True)
     topics = relationship("Topic", backref='fasuser')
 
 
 class Topic(Base):
-    __table__ = 'topics'
-    name = Column(Unicode(128), unique=True)
+    __tablename__ = 'topics'
+    name = Column(Unicode(128), unique=True, primary_key=True)
