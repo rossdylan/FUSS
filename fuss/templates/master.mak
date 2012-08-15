@@ -7,13 +7,11 @@
 		<title> FUSS </title>
 	</head>
 	<body>
-		<div class="header">
-			<div>
-				<H1>
-					<span id="logo">Fedora User Streams</span>
-					User Streams
-				</H1>
-			</div>
+		<div id="header-streams">
+			<H1>
+				<span id="logo">Fedora</span>
+				User Streams
+			</H1>
 		</div>
 	${self.body()}
 	</body>

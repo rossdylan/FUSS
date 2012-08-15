@@ -34,7 +34,7 @@ body {
 	display: block;
 }
 
-#header-search h1 span#logo {
+#header-streams h1 span#logo {
 	margin-top: 1.6em;
 	height: 45px;
 	width: 155px;
@@ -42,7 +42,7 @@ body {
 	text-indent: -9999px;
 	background:transparent url("http://fedoraproject.org/static/css/../images/fedora-logo.png") no-repeat scroll 0px 0px;
 }
-#header-search h1 a {
+#header-streams h1 a {
  	font-family: "ComfortaaRegular", "sans-serif" !important;
 	text-transform: lowercase;
 	color: #8c8c8c;
