@@ -15,8 +15,13 @@ def index(request):
 @view_config(route_name='choose_topics', renderer='prefs.mak')
 def topics(request):
     return {}
+
 @view_config(route_name='login', renderer='login.mak')
 def login(request):
+    return {}
+
+@view_config(route_name='login_openid')
+def login_openid(request):
     return {}
 
 @view_config(route_name='logout', renderer='logout.mak')
