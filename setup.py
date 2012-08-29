@@ -15,6 +15,7 @@ requires = [
     'zope.sqlalchemy',
     'waitress',
     'fedmsg',
+    'velruse',
     ]
 
 setup(name='fuss',
