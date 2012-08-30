@@ -27,7 +27,7 @@ def login(request):
         url = velruse.login_url(request, 'openid') + "?" + identifier
     return HTTPFound(location=url)
 
-@view_config(context='velruse.AuthenticationCOmplete')
+@view_config(context='velruse.AuthenticationComplete')
 def login_complete_view(request):
     context = request.context
     username = context.profile['accounts'][0]['username'].split('/')[1]
