@@ -12,7 +12,7 @@ import models as m
 def index(request):
     return {}
 
-@view_config(route_name='choose_topics', renderer='prefs.mak')
+@view_config(route_name='prefs', renderer='prefs.mak')
 def topics(request):
     return {}
 
@@ -25,7 +25,8 @@ def login(request):
     if username:
         identifier = "openid_identifier={0}{1}".format(fas_url, username)
         url = velruse.login_url(request, 'openid') + "?" + identifier
-    return HTTPFound(location=url)
+        return HTTPFound(location=url)
+    return {}
 
 @view_config(context='velruse.AuthenticationComplete')
 def login_complete_view(request):
