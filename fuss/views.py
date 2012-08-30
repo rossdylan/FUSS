@@ -32,8 +32,8 @@ def login(request):
 def login_complete_view(request):
     context = request.context
     username = context.profile['accounts'][0]['username'].split('/')[1]
-    if m.FasUser.filter_by(username=username).count() == 0:
-        new_user = m.FasUser(username=username)
+    if m.FASUser.query.filter_by(username=username).count() == 0:
+        new_user = m.FASUser(username=username)
         m.DBSession.add(new_user)
     headers = remember(request, username)
     response = HTTPFound(location="/")
